@@ -24,7 +24,7 @@ func main() {
 		Timeout:        3 * time.Second,
 		Fallback:       &types.Upstream{Address: "127.0.0.1:2080"},
 		Index:          rand.Intn(len(addresses)),
-		Stats:          3 * time.Second,
+		Stats:          15 * time.Second,
 	}
 
 	var upstreams []*types.Upstream
