@@ -7,7 +7,7 @@ case $1 in
   ;;
   server)
     (
-      chisel server -p 8000 --socks5
+      exec chisel server -p 8000 --socks5
     ) &
 
     reflex -s go run main.go
